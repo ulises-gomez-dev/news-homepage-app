@@ -22,9 +22,16 @@
   --grey-200: hsl(0 0% 85%);
   --grey-300: hsl(233 8% 79%);
   --navy-600: hsl(236 13% 42%);
-  --navy-950: hsl(236 13% 42%);
+  --navy-950: hsl(240 100% 5%);
   --gold-400: hsl(35 77% 62%);
   --red-500: hsl(4 85% 63%);
+
+  --spacing-100: 8px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-800: 64px;
+  --spacing-1100: 88px;
 }
 
 @layer reset {

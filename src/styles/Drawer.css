@@ -1,0 +1,46 @@
+@layer {
+  .hamburger,
+  .close-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .close-btn {
+    align-self: flex-end;
+  }
+
+  .side-drawer,
+  .side-drawer ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-drawer {
+    width: 312px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: -312px;
+    z-index: 102;
+    background: #fff;
+    transition: right 0.3s ease;
+    gap: var(--spacing-1100);
+  }
+
+  .side-drawer.open {
+    right: 0px; /* slides in */
+  }
+
+  .side-drawer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: var(--spacing-300);
+  }
+
+  .side-drawer ul a {
+    text-decoration: none;
+    color: var(--navy-950);
+  }
+}
