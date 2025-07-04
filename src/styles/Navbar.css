@@ -1,27 +1,39 @@
 @layer {
-  .navbar,
-  .nav-links {
+  .navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
-  .navbar {
-    justify-content: space-between;
+  @media screen and (max-width: 900px) {
+    .nav-links {
+      display: none;
+    }
   }
 
-  .nav-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    gap: var(--spacing-500);
-  }
+  @media screen and (min-width: 901px) {
+    .drawer {
+      display: none;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+    }
 
-  .nav-links a {
-    text-decoration: none;
-    color: var(--navy-600);
-  }
+    .nav-links {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      gap: var(--spacing-500);
+    }
 
-  .nav-links a:hover {
-    color: var(--red-500);
+    .nav-links a {
+      text-decoration: none;
+      color: var(--navy-600);
+    }
+
+    .nav-links a:hover {
+      color: var(--red-500);
+    }
   }
 }

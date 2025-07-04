@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/Drawer.css";
 
-function Drawer() {
+function Drawer({ className }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDrawer = () => {
@@ -9,13 +9,13 @@ function Drawer() {
   };
 
   return (
-    <div className="drawer">
+    <div className={className}>
       <button className="hamburger" onClick={toggleDrawer}>
-        <img src="../assets/images/icon-menu.svg" alt="" />
+        <img src="./src/assets/images/icon-menu.svg" alt="" />
       </button>
       <div className={`side-drawer${isOpen ? " open" : ""}`}>
         <button className="close-btn" onClick={toggleDrawer}>
-          <img src="../assets/images/icon-menu-close.svg" alt="" />
+          <img src="./src/assets/images/icon-menu-close.svg" alt="" />
         </button>
         <ul className="">
           <li>

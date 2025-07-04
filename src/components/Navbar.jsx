@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <figure className="logo">
-        <img src="./assets/images/logo.svg" alt="" />
+        <img src="./src/assets/images/logo.svg" alt="" />
       </figure>
       <ul className="nav-links">
         <li>
@@ -24,7 +24,7 @@ function Navbar() {
           <a href="">Categories</a>
         </li>
       </ul>
-      <Drawer />
+      <Drawer className="drawer"/>
     </nav>
   );
 }
