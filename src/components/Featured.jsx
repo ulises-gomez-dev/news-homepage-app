@@ -3,7 +3,7 @@ import "../styles/Featured.css";
 function Featured() {
   return (
     <div className="featured-articles">
-      <h2 className="title">New</h2>
+      <h2 className="heading">New</h2>
       <ul className="articles-list">
         <li className="article">
           <h3 className="title">Hydrogen VS Electric Cars</h3>

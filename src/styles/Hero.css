@@ -20,11 +20,27 @@
     height: 64px;
   }
 
+  .hero-text h1 {
+    font-family: "Inter-ExtraBold";
+  }
+
+  .hero-text p {
+    font-family: "Inter-Regular";
+    font-size: 15px;
+    line-height: 26px;
+    color: var(--navy-600);
+  }
+
   @media screen and (max-width: 900px) {
     .hero-image {
       background-image: url("./src/assets/images/image-web-3-mobile.jpg");
       min-width: 343px;
       max-width: 608px;
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      line-height: 40px;
     }
   }
 
@@ -36,6 +52,11 @@
 
     .hero-text {
       display: grid;
+    }
+
+    .hero-text h1 {
+      font-size: 56px;
+      line-height: 56px;
     }
   }
 }

@@ -1,15 +1,20 @@
 @layer {
-  .article-list {
+  .article-list,
+  .article-item,
+  .article-info {
     display: flex;
   }
 
+  .article-list {
+    margin-top: var(--spacing-800);
+  }
+
   .article-item {
-    display: flex;
+    align-items: center;
     gap: var(--spacing-300);
   }
 
   .article-info {
-    display: flex;
     flex-direction: column;
     gap: var(--spacing-100);
   }
