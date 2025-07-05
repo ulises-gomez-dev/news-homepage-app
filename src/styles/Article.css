@@ -1,0 +1,50 @@
+@layer {
+  .article-list {
+    display: flex;
+  }
+
+  .article-item {
+    display: flex;
+    gap: var(--spacing-300);
+  }
+
+  .article-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-100);
+  }
+
+  .article-info h2 {
+    font-family: "Inter-Bold";
+    font-size: 32px;
+    line-height: 32px;
+    color: var(--red-500);
+  }
+
+  .article-info h3 {
+    font-family: "Inter-Bold";
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--navy-950);
+  }
+
+  .article-info p {
+    font-family: "Inter-Regular";
+    font-size: 15px;
+    line-height: 26px;
+    color: var(--navy-600);
+  }
+
+  @media screen and (max-width: 900px) {
+    .article-list {
+      flex-direction: column;
+      gap: var(--spacing-400);
+    }
+  }
+
+  @media screen and (min-width: 901px) {
+    .article-list {
+      gap: var(--spacing-500);
+    }
+  }
+}

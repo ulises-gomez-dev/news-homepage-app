@@ -1,0 +1,29 @@
+@layer {
+  .featured-articles {
+    background: var(--navy-950);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-400) 
+  }
+
+  .featured-articles .title {
+    color: var(--gold-400);
+  }
+
+  .article .title {
+    color: var(--white);
+  }
+
+  .article .description {
+    color: var(--grey-300);
+  }
+
+  .article:nth-child(1), .article:nth-child(2) {
+    border-bottom: 1px solid var(--navy-600);
+    padding-bottom: var(--spacing-400);
+  }
+
+  .article:nth-child(2), .article:nth-child(3) {
+    padding-top: var(--spacing-400);
+  }
+}

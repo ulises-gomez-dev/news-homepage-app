@@ -8,6 +8,16 @@
     border: none;
     background: var(--red-500);
     cursor: pointer;
+    padding: var(--spacing-100) var(--spacing-400);
+    color: var(--navy-950);
+
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4.38px;
+
+    width: 249px;
+    height: 64px;
   }
 
   @media screen and (max-width: 900px) {
@@ -15,6 +25,17 @@
       background-image: url("./src/assets/images/image-web-3-mobile.jpg");
       min-width: 343px;
       max-width: 608px;
+    }
+  }
+
+  @media screen and (min-width: 901px) {
+    .hero-image {
+      background-image: url("./src/assets/images/image-web-3-desktop.jpg");
+      width: 730px;
+    }
+
+    .hero-text {
+      display: grid;
     }
   }
 }
