@@ -1,9 +1,9 @@
 import Drawer from "./Drawer.jsx";
 import "../styles/Navbar.css";
 
-function Navbar() {
+function Navbar({ className }) {
   return (
-    <nav className="navbar">
+    <nav className={className}>
       <figure className="logo">
         <img src="./src/assets/images/logo.svg" alt="" />
       </figure>
@@ -24,7 +24,7 @@ function Navbar() {
           <a href="">Categories</a>
         </li>
       </ul>
-      <Drawer className="drawer"/>
+      <Drawer className="drawer" />
     </nav>
   );
 }

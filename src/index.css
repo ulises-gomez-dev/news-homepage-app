@@ -16,7 +16,7 @@
   src: url("./src/assets/fonts/static/Inter-ExtraBold.ttf") format("truetype");
 }
 
-#root {
+:root {
   --white: hsl(0 100% 100%);
   --black: hsl(0 0% 0%);
   --grey-200: hsl(0 0% 85%);
@@ -60,5 +60,14 @@
 
   body {
     background: var(--white);
+  }
+
+  @media screen and (min-width: 1024px) {
+    #root {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 89px 163px 126.1px 165px;
+    }
   }
 }

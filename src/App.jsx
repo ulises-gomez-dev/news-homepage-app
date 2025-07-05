@@ -6,12 +6,12 @@ import "./App.css";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Featured />
-      <Article />
-    </>
+    <div className="homepage">
+      <Navbar className="navbar"/>
+      <Hero className="hero"/>
+      <Featured className="featured-articles"/>
+      <Article className="article-list"/>
+    </div>
   );
 }
 

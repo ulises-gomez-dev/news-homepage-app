@@ -1,8 +1,8 @@
 import "../styles/Featured.css";
 
-function Featured() {
+function Featured({ className }) {
   return (
-    <div className="featured-articles">
+    <div className={className}>
       <h2 className="heading">New</h2>
       <ul className="articles-list">
         <li className="article">

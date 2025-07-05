@@ -1,8 +1,8 @@
 import "../styles/Hero.css";
 
-function Hero() {
+function Hero({ className }) {
   return (
-    <div className="hero">
+    <div className={className}>
       <div className="hero-image"></div>
       <div className="hero-text">
         <h1>The Bright Future of Web 3.0?</h1>

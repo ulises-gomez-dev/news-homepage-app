@@ -1,8 +1,8 @@
 import "../styles/Article.css";
 
-function Article() {
+function Article({ className }) {
   return (
-    <div className="article-list">
+    <div className={className}>
       <div className="article-item">
         <figure className="image">
           <img src="./src/assets/images/image-retro-pcs.jpg" alt="" />
