@@ -13,11 +13,14 @@
 
   @media screen and (min-width: 1024px) {
     .homepage {
+      border: 1px solid black;
+
       width: 1112px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: repeat(3, auto);
       column-gap: var(--spacing-400);
+      row-gap: var(--spacing-800);
     }
 
     .navbar {
@@ -29,6 +32,8 @@
       grid-column: 1 / 2;
       grid-row: 2 / 4;
       max-width: 730px;
+
+      border: 1px solid black;
     }
 
     .featured-articles {
