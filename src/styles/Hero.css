@@ -7,9 +7,10 @@
   }
 
   .hero-image {
+    background-image: url("./src/assets/images/image-web-3-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
   }
 
   .hero-btn {
@@ -41,10 +42,7 @@
 
   @media screen and (max-width: 1023px) {
     .hero-image {
-      background-image: url("./src/assets/images/image-web-3-mobile.jpg");
       height: 300px;
-      min-width: 343px;
-      max-width: 608px;
     }
 
     .hero-text h1 {
@@ -55,7 +53,6 @@
 
   @media screen and (min-width: 1024px) {
     .hero-image {
-      background-image: url("./src/assets/images/image-web-3-desktop.jpg");
       width: 730px;
       height: 380px;
     }
@@ -73,6 +70,12 @@
 
       font-size: 56px;
       line-height: 56px;
+    }
+
+    @media screen and (min-width: 768px) {
+      .hero-image {
+        background-image: url("./src/assets/images/image-web-3-desktop.jpg");
+      }
     }
   }
 }

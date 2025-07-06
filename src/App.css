@@ -9,6 +9,15 @@
     .homepage {
       margin: 28px 80px 80px 80px;
     }
+
+    .navbar {
+      margin-bottom: var(--spacing-400);
+    }
+
+    .hero,
+    .featured-articles {
+      margin-bottom: var(--spacing-800);
+    }
   }
 
   @media screen and (min-width: 1024px) {
